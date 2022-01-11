@@ -1,8 +1,12 @@
 name: Create and publish a Docker image
 
-on: [push, workflow_dispatch]
-  branches:
-    - master
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+    branches:
+      - master
 
 jobs:
   publish-to-ghcr:
